@@ -12,8 +12,6 @@ createBtn.addEventListener("click", () => createBoxes(Number(inputRef.value)));
 function createBoxes(amount) {
   const boxesList = [];
 
-  console.log(amount);
-
   for (let i = 0; i < amount; i += 1) {
     const boxEl = document.createElement("div");
     boxEl.style.backgroundColor = getRandomHexColor();
